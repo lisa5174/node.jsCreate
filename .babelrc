@@ -1,0 +1,10 @@
+{
+  //先安裝再引入,詳細看文件
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties", //把class轉成es5,javascript認得的東西
+    "@babel/plugin-syntax-class-properties"
+  ]
+}
