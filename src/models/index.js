@@ -3,7 +3,7 @@ import fs from "fs";
 import Sequelize from "sequelize";
 import _ from "lodash"; //改
 
-const basename = _basename(__filename);
+const basename = path.basename(__filename);//這裡打錯!!
 const env = process.env.NODE_ENV || "development";
 //const config = require(__dirname + "/../config/config.json")[env];
 
