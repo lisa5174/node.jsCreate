@@ -14,8 +14,8 @@ export default (sequelize, DataTypes) => {
       password: {
         type: DataTypes.STRING(60),
       },
-      email_verified: {
-        type: DataTypes.DATE,
+      email_verfied: {
+        type: DataTypes.STRING,
       },
     },
     {

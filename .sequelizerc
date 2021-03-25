@@ -8,3 +8,7 @@ module.exports = {
     'models-path' : path.resolve('./src/models/'),
     'seeders-path' : path.resolve('./src/databases/seeders/'),
 }
+
+//Node.JS提供了運算元據庫的基礎介面，我們可以通過mysql模組的query方法進行操作，但是需要編寫SQL語句，
+//對於SQL語句並不精通的人來說有一定的難度，而且在程式碼中保留SQL語句也有一定的危險性。
+//為了方便進行資料庫操作，ORM框架應運而生，Sequelize正是這樣的模組。

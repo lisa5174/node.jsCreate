@@ -12,7 +12,7 @@ export async function up(queryInterface, Sequelize) {
       type: Sequelize.STRING(60),
     },
     email_verfied: {
-      type: Sequelize.DATE,
+      type: Sequelize.STRING,
     },
     createdAt: {
       //建立時間
