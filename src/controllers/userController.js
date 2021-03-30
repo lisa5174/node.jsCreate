@@ -1,18 +1,31 @@
+import _ from "lodash"; //有這行才能_.map
 import models from "../models/index";
+import UserService from "../services/user";
 
 const { users } = models;
 
 class UserController {
   getUser = async (req, res) => {
-    const { email } = req.query;
-    const user = await users.findOne({
-      where: {
-        email,
-      },
-    });
-    // const name = "lisa";
-    // const token = `Hi ${name}`;
-    res.status(200).json({ user });
+    // const { body } = req.params;
+    // const user = await UserService.getUser(id);
+
+    // const { email } = req.query; //http://127.0.0.1:3000/api/user?email=lisa571722@gmail.com
+    // const user = await users.findOne({
+    //   where: {
+    //     email,
+    //   },
+    // });
+
+    // const user = await users.findAll({
+    //   attributes: { exclude: ["password"] },
+    // });
+
+    // const reponse = _.map(user, (o) => ({
+    //   ...o.dataValues,
+    //   vip: true,
+    // }));
+
+    res.status(200).json({ user }); //user/response
   };
 
   postUser = async (req, res) => {
